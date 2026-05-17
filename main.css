@@ -82,8 +82,12 @@ color: dimgray;
 font: bold italic 20px "noto serif", georgia, times, serif;
 }
 
-P, UL, LI {
+/* P, UL, LI{
 font: 13px "noto serif", georgia, times, serif;
+} */
+
+P{
+    font: 13px "noto serif", georgia, times, serif;
 }
 
 .Padded {
@@ -127,3 +131,10 @@ margin-right: 10px;
 margin-left: 50px;
 }
 
+.research-paragraph {
+    margin-bottom: 1rem;
+}
+
+.mentor-list{
+    margin-top: 0rem;
+}
