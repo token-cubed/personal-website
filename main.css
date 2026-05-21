@@ -1,7 +1,7 @@
 BODY {
 margin: 0px; 
 padding: 0px;
-background: url('drop_shadow.jpg') center top;
+background: url('uploads/drop_shadow.jpg') center top;
 color: black;
 text-align: center;
 } 
@@ -32,7 +32,7 @@ border-bottom: 1px dotted dimgray;
 }
 
 .Header_Image {
-background: url('header-image.jpg') no-repeat;
+background: url('uploads/header-image.jpg') no-repeat;
 width: 760;
 height: 130px;
 padding: 0px; 
