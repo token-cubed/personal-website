@@ -110,6 +110,14 @@ font: 13px "noto serif", georgia, times, serif;
 font: bold 15px "noto serif", georgia, times, serif;
 }
 
+.research-title {
+    font-size: 15px
+}
+
+.project-title {
+    font-size: 15px
+}
+
 .Footer {
 color: #000000;
 font: 13px "noto serif", georgia, times, serif;
@@ -132,6 +140,10 @@ margin-left: 50px;
 }
 
 .research-paragraph {
+    margin-bottom: 1rem;
+}
+
+.project-paragraph{
     margin-bottom: 1rem;
 }
 
