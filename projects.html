@@ -88,8 +88,9 @@ AND/OR THE ASSOCIATED BACKGROUND IMAGES IS STRICTLY PROHIBITED.
     </div>
 
     <div class="project-paragraph">
-        This was the big end-of-term project for my <a href="https://ece.engin.umich.edu/academics/course-information/course-descriptions/eecs-373/" target="blank">Embedded Systems Design</a>course. 
+        This was the big end-of-term project for my <a href="https://ece.engin.umich.edu/academics/course-information/course-descriptions/eecs-373/" target="blank">Embedded Systems Design</a> course. 
     </div>
+
       <div class="project-paragraph">
         <strong>Background:</strong> 
         The EECS (Electrical Engineering and Computer Science) department at UofM hands out EECS stickers when you pass one of their classes. Students plaster these stickers everywhere. 
@@ -120,7 +121,34 @@ AND/OR THE ASSOCIATED BACKGROUND IMAGES IS STRICTLY PROHIBITED.
     <strong class="project-title">Apogee Detection Simulator</strong>
 
     <div class="project-paragraph">
-        Write-up coming soon (JNP — May 2026)
+        I spent a year on <a href="https://masa.engin.umich.edu/" target="blank">MASA</a>, Michigan's rocketry team. MASA launches custom-built 
+        rockets in 2 to 3 year cycles and was building a new <a href="https://masa.engin.umich.edu/Limelight/" target="blank">massive liquid-fueled rocket</a> when I joined the team in 2024.
+    </div>
+    <div class="project-paragraph"> 
+        After joining, I became the "apogee-detection guy." In rocket-speak, "apogee" is the moment the rocket reaches peak altitude. The detection aspect requires depth in  
+        fundamental physics (think kinematic equations on steroids), algorithm design, and sensors. Unsurprisingly, the faster and higher your rocket goes, the 
+        harder it is to recover it (ours was slated for 50,000 ft and a top speed of Mach 1.7).
+    </div>
+    <div class="project-paragraph"> 
+        I built an apogee-detection testbed in C++ that simulated the entire flight from the perspective of the onboard barometers. The simulations painstakingly accounted for sensor noise and 
+        drift due to temperature and pressure changes. I used real telemetry data 
+        that the team collected from <a href="https://www.youtube.com/watch?v=_e2aY6pwEYs" target="blank">hot-firing the engine</a> to hone the algorithm. The program produced
+        barometer readings that matched what our C drivers on the flight computers expected to receive. 
+    </div>
+    <div class="project-paragraph">
+        Later versions accounted for in-flight events like breaking the sound barrier, MECO (main engine cutoff), decelerating back through the sound barrier, and multiple parachute deployments during descent. 
+    </div>
+    <div class="project-paragraph">
+        We were moving toward using the simulator with a sensor emulation board (SEB) during hardware-in-the-loop testing before 
+        I stepped away from the project to focus on other research. 
+    </div>
+    <div class="project-paragraph">
+        <a href="uploads/terminal-output.png" target ="blank">
+        <img src="uploads/terminal-output.png" style="max-width:100%;"></a>
+    </div>
+
+    <div style="text-align: left">
+        Source code available at <a href="https://github.com/masa-umich/Rocket-Avionics/tree/main/apogee-detection" target="blank">https://github.com/masa-umich/Rocket-Avionics/tree/main/apogee-detection</a>
     </div>
 
     <div>
