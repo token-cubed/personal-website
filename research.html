@@ -89,6 +89,55 @@ AND/OR THE ASSOCIATED BACKGROUND IMAGES IS STRICTLY PROHIBITED.
             </li>
         </ul>
     </div>
+        <div class="research-paragraph">
+        My work at Oak Ridge focused on finding a solution to a pesky and ongoing problem in retrieval-augmented generation (RAG) systems.
+    </div>
+    </div>
+        <div class="research-paragraph">
+        Say you're building a RAG system and have a stack of 
+        documents you're using as your knowledge source. Now imagine a subset of those documents contains 'restricted' information, i.e., stuff you don't want 
+        to send to OpenAI. Outside of those restricted documents, the rest of the dataset (perhaps the bulk of it) is safe to send.  
+    </div>
+    <div class="research-paragraph">
+        Many teams in this scenario implement one of two solutions:
+    </div>
+    <div>
+        (1) Run all local inference.
+    </div>
+    <div class="research-paragraph">
+        (2) Rely on contractual guarantees, for example, an OpenAI promise to "not train" on your data. 
+    </div>
+    <div class="research-paragraph">
+        (1) can be viable, but requires serious infrastructure investment to run large open-weight models. The current largest open-weight models
+        are over a trillion parameters. So, unless your team can afford potentially hundreds of thousands of dollars in infrastructure costs upfront to run them efficiently, you're left working with 
+        smaller models. And of course, if data security is an absolute requirement for your team, (2) might be completely off the table.  
+    </div>
+
+    <div class="research-paragraph">
+        Our group proposed a <i>third</i> solution: dynamically select between local and cloud inference depending on the security 
+        classification of the retrieved evidence. If the evidence contains no restricted information, go ahead and send the answer generation request to the cloud and reap the benefits
+        of higher answer quality. Otherwise, send the request to local compute. 
+    </div>
+    <div class="research-paragraph">
+        I built a full-stack application with a PostgreSQL vector database to demonstrate the utility of this idea, and tested it on a dataset of Department of 
+        Energy project documents that were prelabelled as either 'restricted' or 'releasable'. The benefits of this system were most pronounced on datasets in which most of the documents were labelled 'releasable'. On these 
+        datasets, our system kept all 'restricted' evidence local while improving average answer quality over all-local inference.
+    </div>
+
+    <div>
+       <strong>A comprehensive write-up of this approach is under review for the Privacy and Security of Big Data Special Session at IEEE Big Data 2026.</strong>
+    </div>
+    <div class="research-paragraph">
+
+    </div>
+    <div class="research-paragraph">
+            <div style="text-align:left;">
+            <strong>Conference poster — click to enlarge.</strong>
+            </div>
+            <a href="uploads/pickos-poster-v3.pdf" target="blank">
+                <img src="uploads/pickos-poster-v3.jpg" alt="Preview of my poster" style="max-width:100%;">
+            </a>
+        </div>
     <div>
         ____________________________________________________________________
     </div>
@@ -174,7 +223,7 @@ AND/OR THE ASSOCIATED BACKGROUND IMAGES IS STRICTLY PROHIBITED.
             <strong>Conference poster — click to enlarge.</strong>
             </div>
             <a href="uploads/MakingWayPoster_Summer2024.pdf" target="blank">
-                <img src="uploads/my-paper-preview.jpg" alt="Preview of my paper" style="max-width:100%;">
+                <img src="uploads/my-poster-preview.jpg" alt="Preview of my paper" style="max-width:100%;">
             </a>
         </div>
     </div>
@@ -259,7 +308,7 @@ AND/OR THE ASSOCIATED BACKGROUND IMAGES IS STRICTLY PROHIBITED.
 <a href="research.html">Research</a>
 <a href="projects.html">Projects</a>
 <!-- <a href="coursework.html">Coursework</a> -->
-<a href="uploads/pickos-resume-may26.pdf">CV</a>
+<a href="uploads/resume_condensed_work.pdf">CV</a>
 <a href="contact.html">Contact</a>
 <a href="uploads/pickos-img.jpeg">
 <img src="uploads/pickos-img.jpeg" alt="" style="width:100px">
